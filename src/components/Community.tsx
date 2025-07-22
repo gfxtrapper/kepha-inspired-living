@@ -60,14 +60,22 @@ const Community = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="hero" size="lg">
-                Join Community
-              </Button>
-              <Button variant="golden" size="lg">
-                Subscribe to Newsletter
-              </Button>
-            </div>
+             <div className="flex flex-col sm:flex-row gap-4 pt-4">
+               <Button 
+                 variant="hero" 
+                 size="lg"
+                 onClick={() => alert('Join Community - Coming Soon!')}
+               >
+                 Join Community
+               </Button>
+               <Button 
+                 variant="golden" 
+                 size="lg"
+                 onClick={() => alert('Newsletter subscription - Coming Soon!')}
+               >
+                 Subscribe to Newsletter
+               </Button>
+             </div>
           </div>
 
           {/* Image */}

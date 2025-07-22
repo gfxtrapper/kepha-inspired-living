@@ -99,9 +99,13 @@ const Footer = () => {
               placeholder="Enter your email"
               className="flex-1 px-4 py-3 rounded-lg text-primary bg-primary-foreground/10 border border-primary-foreground/20 placeholder:text-primary-foreground/60 focus:outline-none focus:ring-2 focus:ring-gold"
             />
-            <Button variant="golden" className="px-8">
-              Subscribe
-            </Button>
+             <Button 
+               variant="golden" 
+               className="px-8"
+               onClick={() => alert('Newsletter subscription - Coming Soon!')}
+             >
+               Subscribe
+             </Button>
           </div>
         </div>
 

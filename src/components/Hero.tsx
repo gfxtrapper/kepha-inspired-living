@@ -26,12 +26,22 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button variant="hero" size="lg" className="group">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="group"
+              onClick={() => document.getElementById('content-hub')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Explore Teachings
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button variant="gentle" size="lg" className="bg-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/30 border-primary-foreground/30">
+            <Button 
+              variant="gentle" 
+              size="lg" 
+              className="bg-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/30 border-primary-foreground/30"
+              onClick={() => window.open('https://example.com/latest-sermon', '_blank')}
+            >
               <Play className="mr-2" />
               Latest Sermon
             </Button>

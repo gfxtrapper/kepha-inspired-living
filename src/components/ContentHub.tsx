@@ -72,10 +72,15 @@ const ContentHub = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium text-gold">{content.count}</span>
-                  <Button variant="ghost" size="sm" className="group-hover:bg-accent">
-                    Explore
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                   <Button 
+                     variant="ghost" 
+                     size="sm" 
+                     className="group-hover:bg-accent"
+                     onClick={() => alert(`Exploring ${content.title} - Coming Soon!`)}
+                   >
+                     Explore
+                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                   </Button>
                 </div>
               </CardContent>
             </Card>
@@ -97,10 +102,15 @@ const ContentHub = () => {
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-gold">Monthly Events</span>
-                <Button variant="gentle" size="sm" className="bg-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/30">
-                  View Calendar
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                 <Button 
+                   variant="gentle" 
+                   size="sm" 
+                   className="bg-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/30"
+                   onClick={() => alert('View Calendar - Coming Soon!')}
+                 >
+                   View Calendar
+                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                 </Button>
               </div>
             </CardContent>
           </Card>
@@ -108,10 +118,14 @@ const ContentHub = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <Button variant="hero" size="lg">
-            Access All Resources
-            <ArrowRight className="w-5 h-5" />
-          </Button>
+           <Button 
+             variant="hero" 
+             size="lg"
+             onClick={() => alert('Access All Resources - Coming Soon!')}
+           >
+             Access All Resources
+             <ArrowRight className="w-5 h-5" />
+           </Button>
         </div>
       </div>
     </section>
